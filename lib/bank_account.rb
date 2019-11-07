@@ -13,7 +13,7 @@ class BankAccount
   end
   
   def display_balance
-    self.class.balance
+    @balance
   end
   
   def valid?
@@ -21,6 +21,6 @@ class BankAccount
   end
   
   def close_account
-    self.status = 'close'
+    self.status = 'closed'
   end
 end
