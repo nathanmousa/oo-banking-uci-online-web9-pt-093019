@@ -13,7 +13,7 @@ class BankAccount
   end
   
   def display_balance
-    self.balance
+    self.class.balance
   end
   
   def valid?
