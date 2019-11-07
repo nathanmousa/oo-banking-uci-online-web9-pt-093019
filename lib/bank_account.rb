@@ -15,4 +15,8 @@ class BankAccount
   def display_balance
     self.balance
   end
+  
+  def valid?
+    
+  end
 end
