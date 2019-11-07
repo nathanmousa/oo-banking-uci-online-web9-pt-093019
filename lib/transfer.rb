@@ -24,6 +24,9 @@ class Transfer
   end
   
   def reverse_transfer
-    
+    if valid? && status == "pending" && sender.balance >= amount
+      sender.balance -= amount
+      receiver.balance += amount
+      self.status = "complete"
   end
 end
