@@ -9,6 +9,10 @@ class BankAccount
   end
   
   def deposit(money)
-    self.balance = balance + money
-    
+    self.balance += money
+  end
+  
+  def display_balance
+    self.balance
+  end
 end
